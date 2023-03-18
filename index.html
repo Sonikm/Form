@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="outer-box">
+
+            <!-- Home page -->
+            <div class="inner-box home-page">
+               <h1 class="title">Hello!</h1>
+               <p>Create an account to download materials. Already have an account  <a href="#">Sign In</a></p>
+
+                <form>
+                    <div class="btn">
+                        <button type="button" class="color-btn" onclick="signIn()">SIGN IN</button>
+                        <button type="button" class="color-btn" onclick="signUp()">SIGN UP</button>
+                    </div>
+                </form>
+
+                <div class="social-icon">
+                    <div>or</div>
+                    <img class="social-img" src="icons8-google-48.png" alt="">
+                    <img class="social-img" src="icons8-facebook-48.png" alt="">
+                    <img class="social-img" src="icons8-twitter-48.png" alt="">
+                </div>
+
+
+            </div>
+
+            <!-- SignIn page -->
+            <div class="inner-box signIn-page">
+               
+                <form>
+                    <div class="input-field">
+                        <input type="email" name="email" id="email2" placeholder="example@.com">
+                        <input type="password" name="password" id="password2" placeholder="password..">
+                        <i class="far fa-eye" id="togglePassword2"></i>
+                        <button type="button" class="signinBtn btn" onclick="welcome2()">SIGN IN</button>
+                        <a href="#">Forget password</a>
+                    </div>
+                    <div class="signIn-with-google btn">
+                        <button type="button"> <img src="google.png" alt="google"> SIGN IN WITH GOOGLE <span></span></button>
+                        <p>Don't have an account <a href="#" onclick="goToSignUp()">Sign up</a></p>
+                    </div>
+                </form>
+ 
+             </div>
+
+             <!-- SignUp page -->
+             <div class="inner-box signUp-page">
+               
+                <form>
+                    <div class="input-field">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="example@.com">
+                        <input type="password" name="password" id="password" placeholder="password..">
+                        <i class="far fa-eye" id="togglePassword"></i>
+                        <div class="term_conditions">
+                            <input type="checkbox" name="term and conditions">
+                            <p>I Agree with <a href="#">privacy</a> and <a href="#">policy</a></p>
+                        </div>
+                        <button type="button" class="signupBtn btn" onclick="welcome1()">SIGN UP</button>
+                        <p>Already have an account? <a href="#" onclick="goToSignIn()">Sign In</a></p>
+
+                    </div>
+                </form>
+ 
+             </div>
+
+        </div>
+        
+    </div>
+     
+    
+    <script src="main.js"></script>
+
+    
+    
+</body>
+</html>
